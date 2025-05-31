@@ -1,4 +1,5 @@
-import { bot } from '../core/bot.ts';
-import { startController } from '../controllers/index.ts';
+import { bot } from "../core/bot.ts";
+import { startController } from "../controllers/start.ts";
 
-bot.command('start', startController);
+// Команда /start показывает общую информацию
+bot.command("start", startController);

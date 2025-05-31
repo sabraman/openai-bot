@@ -1,4 +1,5 @@
-import { bot } from '../core/bot.ts';
-import { messageController } from '../controllers/index.ts';
+import { bot } from "../core/bot.ts";
+import { handleMessage } from "../controllers/interview.ts";
 
-bot.on('message', messageController);
+// Обрабатываем все текстовые сообщения
+bot.on("message:text", handleMessage);
